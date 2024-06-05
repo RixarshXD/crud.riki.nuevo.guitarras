@@ -84,6 +84,30 @@ const registrar = () =>{
         puente:vPuente,
         trastes:vTrastes
     }
+    
+    const campos = [
+        {element: document.getElementById("modelo"), value: vModelo},
+        {element: document.getElementById("puente"), value: vPuente},
+        {element: document.getElementById("trastes"), value: vTrastes}
+    ];
+
+    let valido = true;
+
+    campos.forEach(campos => {
+        if (!campos.value.trim()) {
+            campos.element.style.border = "2px solid red";
+            valido = false;
+        } else {
+            field.element.style.border = "";
+        }
+    });
+
+    if (!valido) {
+        alert("Es obligatorio rellenar los campos en rojo");
+        };
+
+
+    
     registrarGuitarra(objeto).then(()=>{
         alert('se ha registrado la guitarra con exito');
         traerDatos();
@@ -121,3 +145,4 @@ const actualizar = () =>{
         console.log(e)
     })
 }
+
