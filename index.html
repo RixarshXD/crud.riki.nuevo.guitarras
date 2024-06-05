@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/firebase.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GuitarsRiks</h1>
+    <h1>registro de instrumento</h1>
+    <input type="text" id="modelo" placeholder="Modelo"><br>
+    <input type="text" id="cuerdas" placeholder="Cuerdas"><br>
+    <input type="text" id="color" placeholder="Color"><br>
+    <input type="text" id="puente" placeholder="Puente"><br>
+    <input type="text" id="trastes" placeholder="Trastes"><br>
+
+    <button id="btnRegistrar">Registrar guitarra</button>
+
+
+
+
+    <!-- crear tabla para que se muestren los datos de la base de datos -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Cuerdas</th>
+                <th>Color</th>
+                <th>Puente</th>
+                <th>Trastes</th>
+            </tr>
+        </thead>
+        <tbody id="tbGuitarras"></tbody>
+    </table>
+    
+    <h1>Modificar</h1>
+    <input type="text" id="UPDmodelo" placeholder="modelo"><br>
+    <input type="text" id="UPDcuerdas" placeholder="cuerdas"><br>
+    <input type="text" id="UPDcolor" placeholder="color"><br>
+    <input type="text" id="UPDpuente" placeholder="puente"><br>
+    <input type="text" id="UPDtrastes" placeholder="trastes"><br>
+    <button id="btnActualizar">Actualizar</button>
+
+</body>
+</html>
